@@ -1,7 +1,7 @@
-# asadstore
-# client side : User Side
+# Asadstore
+# Client side : User Side
     # Before Login
-        - Home
+        - Home / Index /  Landing Page ..
         - About
         - Contact
         - Products
