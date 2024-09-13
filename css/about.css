@@ -1,0 +1,42 @@
+.box {
+    border:1px solid #dd0000; 
+    padding:0.5%; 
+    width:90%; 
+    background-color:rgb(208, 200, 114);
+    color:white;
+}
+.box:hover{
+    background-color:pink;
+}
+
+.box3 {
+    border: 1px solid red;
+    height: 100px;
+}
+#box3 {
+    border: 1px solid red;
+    height: 100px;
+}
+.lister {
+    background-color: gray;
+    list-style-type: none;
+}
+.lister > li  {
+    float: left;
+    margin-right:20px;
+    font-size: 20px;
+}
+.lister > li > a {
+    text-decoration: none;
+    padding:6%;
+}
+.lister > li > a:hover {
+    background-color: blue;
+    color: white;
+}
+.navbar {
+    background-color: orange;
+}
+.bg-purple {
+    background-color: purple;
+}
