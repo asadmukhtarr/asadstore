@@ -1,17 +1,163 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <ul>
-        <li><a href="index.html"> Home </a></li>
-        <li><a href="about.html"> About </a></li>
-        <li><a href="products.html"> Products </a></li>
-        <li><a href="login.html"> Login </a></li>
-        <li><a href="contact.html"> Contact </a></li>
-    </ul>
+<html>
+    <head>
+        <title> Find it, Love it, Buy it | Asadstore.com</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+        .nav-link {
+            color:white !important;
+        }
+        .card {
+            border-radius: 0px !important;
+        }
+        .bg-c {
+            background-color: purple !important;
+        }
+        .list-group-item > a {
+            text-decoration: none;
+            color:black;
+        }
+    </style>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-c">
+                <div class="container">
+                    <a href="#" class="navbar-brand text-white">
+                       <i class="fa fa-truck"></i> Asad Mukhtar
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarasad" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarasad">
+                        <ul class="navbar-nav mb-2 mb-lg-0 text-white">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"> <i class="fa fa-home"></i> Home</a>    
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link"> <i class="fa fa-pencil" aria-hidden="true"></i> About</a>    
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"> <i class="fa fa-list"></i> Products</a>    
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link"> <i class="fa fa-handshake-o"></i> Contact</a>    
+                            </li>
+                        </ul>
+                        <ul  class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-user-circle"></i> My Account
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Login</a></li>
+                                    <li><a class="dropdown-item" href="#">Register</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="btn btn-sm btn-warning position-relative mt-1">
+                                    <i class="fa fa-shopping-bag" aria-hidden="true"></i> Cart
+                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    99+
+                                    <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13602.379267267164!2d74.289178!3d31.5352867!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391903ef43729ac7%3A0xedf369696ad4f587!2swebeducatorz%20%7C%20Pakistan%20First%20E-learning%20Platform%20To%20Learn%20Skills!5e0!3m2!1sen!2s!4v1726465861128!5m2!1sen!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header bg-c text-white">
+                            <i class="fa fa-check-circle"></i> Follow Us
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <a href="https://www.facebook.com/webeducatorz.org">
+                                    <i class="fa fa-facebook"></i> Webeducatorz
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://www.facebook.com/webeducatorz.org">
+                                    <i class="fa fa-youtube"></i> Asad Mukhtar
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://www.linkedin.com/">
+                                    <i class="fa fa-linkedin"></i> Asad Mukhtar
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="https://www.linkedin.com/">
+                                    <i class="fa fa-twitter"></i> Asad Mukhtar
+                                </a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                    <div class="card mt-3">
+                        <div class="card-header bg-c text-white">
+                            <i class="fa fa-map"></i> Contact US
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <i class="fa fa-whatsapp"></i> 0000000000
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fa fa-envelope"></i> asad@webeducatorz.org
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i> Lahore , Pakistan
+                            </li>
+                          </ul>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                   <div class="card">
+                        <div class="card-header bg-c text-white">
+                            <i class="fa fa-handshake-o"></i> Get In Touch
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group mt-1">
+                                <label for=""><i class="fa fa-user-circle"></i> Full Name </label>
+                                <input type="text" class="form-control" name="name">
+                            </div>
+                            <div class="form-group mt-1">
+                                <label for=""><i class="fa fa-envelope"></i> Email</label>
+                                <input type="text" class="form-control" name="email">
+                            </div>
+                            <div class="form-group mt-1">
+                                <label for=""><i class="fa fa-book"></i> Subject</label>
+                                <input type="text" class="form-control" name="email">
+                            </div>
+                            <div class="form-group mt-1">
+                                <label for=""><i class="fa fa-list"></i> Select Department </label>
+                               <select name="select_department" id="" class="form-control">
+                                 <option value=""> Select Department </option>
+                                 <option value="">Administrator</option>
+                                 <option value="">Accounts</option>
+                                 <option value="">Customer Support</option>
+                               </select>
+                            </div>
+                            <div class="form-group mt-2">
+                                <i class="fa fa-pencil">Message </i>
+                                <textarea name="message" class="form-control" rows="10" style="resize: none;" id=""></textarea>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-danger"> <i class="fa fa-envelope"></i> Send Message</button>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
 </body>
 </html>
