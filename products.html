@@ -1,63 +1,209 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-    .header {
-        height:100px; 
-        border:1px solid red;
-    }
-    .slider {
-        height:400px; 
-        border:1px solid red;
-    }
-    .box {
-       padding:1%; 
-    }
-    .box > div {
-        width: 32%;
-        border: 1px solid red;
-        border-radius:2%;
-        margin-right:1%;
-        background-color:yellow;
-
-        float: left;
-    }
-    .box > div > div {
-        padding: 2%;
-    }
-</style>
-<body>
-    <div class="header"></div>
-    <div class="slider"></div>
-    <div class="box">
-        <div>
-            <img src="images/one.jpg" width="100%" alt="">
-            <div>
-                <h2>Hello World</h2>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque libero distinctio sed, voluptate harum quas est eum suscipit sequi veritatis magni laboriosam optio quam iure similique excepturi ipsam accusantium eveniet.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque libero distinctio sed, voluptate harum quas est eum suscipit sequi veritatis magni laboriosam optio quam iure similique excepturi ipsam accusantium eveniet.
+<html>
+    <head>
+        <title> Find it, Love it, Buy it | Asadstore.com</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+        .nav-link {
+            color:white !important;
+        }
+        .card {
+            border-radius: 0px !important;
+        }
+        .bg-c {
+            background-color: purple !important;
+        }
+    </style>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-c">
+                <div class="container">
+                    <a href="#" class="navbar-brand text-white">
+                       <i class="fa fa-truck"></i> Asad Mukhtar
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarasad" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarasad">
+                        <ul class="navbar-nav mb-2 mb-lg-0 text-white">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link"> <i class="fa fa-home"></i> Home</a>    
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link"> <i class="fa fa-pencil" aria-hidden="true"></i> About</a>    
+                            </li>
+                            <li class="nav-item">
+                                <a href="products.html" class="nav-link"> <i class="fa fa-list"></i> Products</a>    
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link"> <i class="fa fa-handshake-o"></i> Contact</a>    
+                            </li>
+                        </ul>
+                        <ul  class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa fa-user-circle"></i> My Account
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                    <li><a class="dropdown-item" href="register.html">Register</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="cart.html" class="btn btn-sm btn-warning position-relative mt-1">
+                                    <i class="fa fa-shopping-bag" aria-hidden="true"></i> Cart
+                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    99+
+                                    <span class="visually-hidden">unread messages</span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container mt-4">
+            <div class="row mt-2">
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" alt="Team Member 1" class="img-fluid mb-3">
+                        <div class="card-footer d-flex">
+                            <span>
+                                1000 PKR
+                            </span>
+                            <button class="btn btn-sm btn-danger ms-auto"> <i class="fa fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" alt="Team Member 1" class="img-fluid mb-3">
+                        <div class="card-footer d-flex">
+                            <span>
+                                1000 PKR
+                            </span>
+                            <button class="btn btn-sm btn-danger ms-auto"> <i class="fa fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" alt="Team Member 1" class="img-fluid mb-3">
+                        <div class="card-footer d-flex">
+                            <span>
+                                1000 PKR
+                            </span>
+                            <button class="btn btn-sm btn-danger ms-auto"> <i class="fa fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" alt="Team Member 1" class="img-fluid mb-3">
+                        <div class="card-footer d-flex">
+                            <span>
+                                1000 PKR
+                            </span>
+                            <button class="btn btn-sm btn-danger ms-auto"> <i class="fa fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" alt="Team Member 1" class="img-fluid mb-3">
+                        <div class="card-footer d-flex">
+                            <span>
+                                1000 PKR
+                            </span>
+                            <button class="btn btn-sm btn-danger ms-auto"> <i class="fa fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" alt="Team Member 1" class="img-fluid mb-3">
+                        <div class="card-footer d-flex">
+                            <span>
+                                1000 PKR
+                            </span>
+                            <button class="btn btn-sm btn-danger ms-auto"> <i class="fa fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" alt="Team Member 1" class="img-fluid mb-3">
+                        <div class="card-footer d-flex">
+                            <span>
+                                1000 PKR
+                            </span>
+                            <button class="btn btn-sm btn-danger ms-auto"> <i class="fa fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" alt="Team Member 1" class="img-fluid mb-3">
+                        <div class="card-footer d-flex">
+                            <span>
+                                1000 PKR
+                            </span>
+                            <button class="btn btn-sm btn-danger ms-auto"> <i class="fa fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" alt="Team Member 1" class="img-fluid mb-3">
+                        <div class="card-footer d-flex">
+                            <span>
+                                1000 PKR
+                            </span>
+                            <button class="btn btn-sm btn-danger ms-auto"> <i class="fa fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" alt="Team Member 1" class="img-fluid mb-3">
+                        <div class="card-footer d-flex">
+                            <span>
+                                1000 PKR
+                            </span>
+                            <button class="btn btn-sm btn-danger ms-auto"> <i class="fa fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" alt="Team Member 1" class="img-fluid mb-3">
+                        <div class="card-footer d-flex">
+                            <span>
+                                1000 PKR
+                            </span>
+                            <button class="btn btn-sm btn-danger ms-auto"> <i class="fa fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/150" alt="Team Member 1" class="img-fluid mb-3">
+                        <div class="card-footer d-flex">
+                            <span>
+                                1000 PKR
+                            </span>
+                            <button class="btn btn-sm btn-danger ms-auto"> <i class="fa fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div>
-            <img src="images/one.jpg" width="100%" alt="">
-            <div>
-                <h2>Hello World</h2>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque libero distinctio sed, voluptate harum quas est eum suscipit sequi veritatis magni laboriosam optio quam iure similique excepturi ipsam accusantium eveniet.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque libero distinctio sed, voluptate harum quas est eum suscipit sequi veritatis magni laboriosam optio quam iure similique excepturi ipsam accusantium eveniet.
-            </div>
-        </div>
-        <div>
-            <img src="images/one.jpg" width="100%" alt="">
-            <div>
-                <h2>Hello World</h2>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque libero distinctio sed, voluptate harum quas est eum suscipit sequi veritatis magni laboriosam optio quam iure similique excepturi ipsam accusantium eveniet.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque libero distinctio sed, voluptate harum quas est eum suscipit sequi veritatis magni laboriosam optio quam iure similique excepturi ipsam accusantium eveniet.
-            </div>
-        </div>
-    </div>
-</body>
+    </body>
 </html>
