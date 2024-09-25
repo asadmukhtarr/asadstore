@@ -74,7 +74,7 @@
                         </div>
                         <div class="card-body">
                             <div class="form-group">
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" id="calculation">
                             </div>
                         </div>
                         <table class="table table-bordered table-hover table-striped">
@@ -136,11 +136,15 @@
                     <button class="btn btn-danger" value="Checked" onmouseover="asad(this.value)">Click Me</button>
                     <input type="text" class="form-control mt-2" onkeyup="inpchecker(this.value)">
                     <p id="education"></p>
+                    <button type="button" value="Musa" onclick="qasim(this.value)">Click Me</button>
                 </div>
             </div>
         </div>
     </body>
     <script>
+        function qasim(usama){
+            alert(usama);
+        }
         function asad(c){
             alert(c);
         }
@@ -151,7 +155,18 @@
             document.getElementById("education").innerHTML = v;
         }
         function calculate(b){
-            alert(b);
+            // = Store a value ..
+            // == compare
+            if( b == "c"){
+                document.getElementById("calculation").value = " ";
+            } else if(b == "=") {
+                var alreadyvalue = document.getElementById("calculation").value;
+                document.getElementById("calculation").value = eval(alreadyvalue); 
+            } else {
+                var alreadyvalue = document.getElementById("calculation").value;
+                var newvalue = alreadyvalue + b;
+                document.getElementById("calculation").value = newvalue;
+            }
         }
     </script>
 </html>
