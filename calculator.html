@@ -67,7 +67,7 @@
         </header>
         <div class="container mt-3">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <div class="card">
                         <div class="card-header bg-c text-white">
                             <i class="fa fa-calculator"></i> Calculator
@@ -132,11 +132,47 @@
                         </table>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-2">
                     <button class="btn btn-danger" value="Checked" onmouseover="asad(this.value)">Click Me</button>
                     <input type="text" class="form-control mt-2" onkeyup="inpchecker(this.value)">
                     <p id="education"></p>
                     <button type="button" value="Musa" onclick="qasim(this.value)">Click Me</button>
+                </div>
+                <div class="col-lg-7">
+                    <div class="card">
+                        <div class="card-header">
+                            Currency Exchanger
+                        </div>
+                        <table class="table table-bordered table-striped">
+                            <tr>
+                                <th>Amount</th>
+                                <th>Currency</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" class="form-control" id="output" disabled>
+                                </td>
+                                <td>
+                                    Pakistani Rupees
+                                </td>
+                            </tr>
+                            <tr>
+                               <td>
+                                 <input type="text" class="form-control" onkeyup="exchanger(this.value)" value="1" id="amount">
+                               </td>
+                               <td>
+                                <select name="" class="form-control" onchange="currecy_changer(this.value)" id="selected_currency">
+                                    <option value="">Select Currency</option>
+                                    <option value="278.98">Dollar</option>
+                                    <option value="74.33">Riyal</option>
+                                    <option value="70">Yuan</option>
+                                    <option value="913.07">Dinar</option>
+                                    <option value="373.17" selected>Pound</option>
+                                </select>
+                               </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
@@ -167,6 +203,22 @@
                 var newvalue = alreadyvalue + b;
                 document.getElementById("calculation").value = newvalue;
             }
+        }
+        var selected_currency = document.getElementById("selected_currency").value;
+        var amount = document.getElementById("amount").value;
+        var output = selected_currency * amount;
+        document.getElementById("output").value = output;
+        function exchanger(val){
+            var amount = val;
+            var selected_currency = document.getElementById("selected_currency").value;
+            var output = selected_currency * amount;
+            document.getElementById("output").value = output;
+        }
+        function currecy_changer(c){
+            var selected_currency = c;
+            var amount = document.getElementById("amount").value;
+            var output = selected_currency * amount;
+            document.getElementById("output").value = output;
         }
     </script>
 </html>
